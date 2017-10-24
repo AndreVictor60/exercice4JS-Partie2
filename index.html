@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <!-- Appel la fonction supp() en cliquant sur le bouton -->
+    <button type="button" name="button" onclick="supp()">RAZ</button>
+  </form>
+  <script>
+    function supp() {
+      // Déclarer variable nom, récuperer la value du formulaire et ensuite on le supprime en le remplacant par null
+      var nom =document.getElementById('nom').value = null ,prenom = document.getElementById('prenom').value = null ,ville = document.getElementById('ville').value = null ;
+    }
+  </script>
+</body>
+</html>
